@@ -1,6 +1,95 @@
 //Class 1:
         // Fork and clone the repo and set up your project workspace and link files
+  
         // Write HTML for your project
+        
+$(document).ready({
+
+function selectWinner(userChoice, computerChoice) {
+    
+    if (userChoice === "scissors") {
+ 
+        if (computerChoice === "rock") {
+            return "computer wins";
+        } else if (computerChoice === "paper") {
+            return "user wins";
+        } else {
+            return "it's a tie";
+        }
+        
+    }
+    
+    if (userChoice === "rock") {
+ 
+        if (computerChoice === "paper") {
+            return "computer wins";
+        } else if (computerChoice === "scissors") {
+            return "user wins";
+        } else {
+            return "it's a tie";
+        }
+        
+    }
+        if (userChoice === "paper") {
+ 
+        if (computerChoice === "scissors") {
+            return "computer wins";
+        } else if (computerChoice === "rock") {
+            return "user wins";
+        } else {
+            return "it's a tie";
+        }
+        
+    }
+    
+    // TODO - we need to handle the cases where the user chooses rock or paper
+}
+
+
+
+//alert(winner,name);
+function getRandomChoice() {
+    var Choice = ["rock","paper","scissors"];
+
+    var randomIndex = Math.floor(Math.random() * Choice.length);
+
+    var randomChoice = Choice[randomIndex];
+    
+    return randomChoice;
+ 
+}
+
+
+
+
+//alert(name);
+    $("#A").click(function(){
+     var CPU = getRandomChoice();
+     var UserChoice = $("In").val();
+          var winner = selectWinner(UserChoice, CPU);
+          alert(winner);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
 //Class 2:  
         // Declare four global variables for intial state of the list of choices, the computer choice, the user choice, and the winner.  
         // Practice using console.log() and debugger to debug your code
