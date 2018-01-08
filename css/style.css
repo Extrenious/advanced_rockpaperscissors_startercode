@@ -1,4 +1,4 @@
-#B{
+#A{
     border:none;
     background-color: #f44336;
     padding:5px 2px;
@@ -6,10 +6,10 @@
 }
 
 
-#B:hover {
+#A:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-#B:hover {
+#A:hover {
     background-color: #555555;
     color: white;
 }

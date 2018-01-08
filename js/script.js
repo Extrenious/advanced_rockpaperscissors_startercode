@@ -3,8 +3,7 @@
   
         // Write HTML for your project
         
-$(document).ready({
-
+$(document).ready(function(){
 function selectWinner(userChoice, computerChoice) {
     
     if (userChoice === "scissors") {
@@ -59,32 +58,12 @@ function getRandomChoice() {
  
 }
 
-
-
-
-//alert(name);
-    $("#A").click(function(){
-     var CPU = getRandomChoice();
-     var UserChoice = $("In").val();
-          var winner = selectWinner(UserChoice, CPU);
-          alert(winner);
+  $("#A").click(function(){
+        var CPU = getRandomChoice();
+        var UserChoice = $("input").val();
+        var winner = selectWinner(UserChoice, CPU);
+        alert(winner);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
